@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const tpoints = {};
 const vpoints = {};
 const jimp = require("jimp");
-const prefix = "#";
+const prefix = "!";
 const client = new Discord.Client();
 let done = {};
 client.on('ready', () => {
@@ -32,8 +32,8 @@ client.on('ready', () => {
 });
 
 
-     const adminprefix = "#";
-const devs = ['411137717884289024','345152850751389697'];
+     const adminprefix = "!";
+const devs = ['411137717884289024','356896203688116234'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -57,7 +57,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 });
 
-const developers = ["411137717884289024","345152850751389697",""]
+const developers = ["411137717884289024","356896203688116234",""]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
